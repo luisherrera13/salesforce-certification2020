@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);/*for css or scss identation format press shift+alt+f on windows*/
+/*for css or scss identation format press shift+option+f on mac*/
+/*for css or scss identation format press ctrl+shift+l on ubuntu*/
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');*/
+body {
+  background: white; }
+
+.col-sm-1 {
+  padding-left: 0%;
+  padding-right: 1%; }
+
+.user-message {
+  color: white;
+  text-transform: uppercase;
+  visibility: visible; }
+
+.loginx {
+  padding-top: 3%; }
+
+.fa.fa-sign-in + a {
+  color: black; }
+
+.fa.fa-sign-in {
+  color: white !important; }
+
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+  background-color: transparent; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+.logo-home {
+  height: 100px;
+  width: 100%;
+  float: center; }
+
+.main-menu {
+  background: #181818;
+  /*padding-top: 2%;*/
+  font-family: "Montserrat"; }
+
+.menu-group {
+  padding-top: 3%; }
+
+.col-sm-7 {
+  margin-right: -5%; }
+
+.search-field {
+  visibility: hidden; }
+
+.site-search {
+  /*visibility: visible;*/
+  padding-top: 15%; }
+
+.fa.fa-search {
+  /*top: 2.5625em;*/
+  top: 90%;
+  color: white; }
+
+/*.fa-search:active {
+      width: 70px;
+      height: 74px;
+      
+    } css boton search */
+.minicart {
+  margin-left: 225%;
+  margin-top: 40%; }
+
+.minicart a {
+  color: white !important; }
+
+/*Se pueden poner imagenes como esta que es para el hero banner del homepage y se debe poner la imagen en cartridges\app_custom_storefront\cartridge\static\default\images\  
+ 
+ .hero.main-callout {
+  background-image: url('https://bfbv-008.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.servlet/webdav/Sites/Cartridges/sfra_jose_luis_herrera_tcwtd/app_custom_storefront/cartridge/static/default/images/moda-mujer.jpg');
+  }
+ 
+ */
+#heromaincall1 {
+  background-image: url("https://bfbv-008.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.servlet/webdav/Sites/Cartridges/sfra_jose_luis_herrera_tcwtd/app_custom_storefront/cartridge/static/default/images/categorias.jpg"); }
+
+#heromaincall2 {
+  background-image: url("https://bfbv-008.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.servlet/webdav/Sites/Cartridges/sfra_jose_luis_herrera_tcwtd/app_custom_storefront/cartridge/static/default/images/promociones2.jpg"); }
+
+#heromaincall3 {
+  background-image: url("https://bfbv-008.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.servlet/webdav/Sites/Cartridges/sfra_jose_luis_herrera_tcwtd/app_custom_storefront/cartridge/static/default/images/moda-hombre2.jpg"); }
+
+#heromaincall4 {
+  background-image: url("https://bfbv-008.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.servlet/webdav/Sites/Cartridges/sfra_jose_luis_herrera_tcwtd/app_custom_storefront/cartridge/static/default/images/moda-mujer.jpg"); }
+
+#heromaincall5 {
+  background-image: url("https://bfbv-008.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.servlet/webdav/Sites/Cartridges/sfra_jose_luis_herrera_tcwtd/app_custom_storefront/cartridge/static/default/images/electronica.jpg"); }

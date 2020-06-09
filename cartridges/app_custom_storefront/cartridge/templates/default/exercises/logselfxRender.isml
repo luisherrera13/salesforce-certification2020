@@ -1,0 +1,13 @@
+<isdecorate template="common/layout/page">
+
+    <div class="container">
+            <p>
+            
+                ${Resource.msg('main.response.customlogselfx', 'logselfxRender', null)}
+
+                <isprint value="${pdict.info}" encoding="htmlcontent" />
+            </p>
+    </div>
+
+
+</isdecorate>

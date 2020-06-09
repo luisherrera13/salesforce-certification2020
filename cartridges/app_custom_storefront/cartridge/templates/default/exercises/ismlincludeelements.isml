@@ -1,0 +1,61 @@
+ <iscontent type="text/html" charset="UTF-8" compact="true"/>
+ <isinclude template="/components/modules" sf-toolkit="off" />
+ <isscript>
+        assets.addJs('/js/tesTile.js');
+    </isscript>
+<!DOCTYPE html>
+<iscomment>
+    Template with local and remote include
+</iscomment>
+
+    <isdecorate template="common/layout/page">
+                                <div>
+
+                                <h2>Simple ISML H2 Text Test Jose Luis Herrera</h2>
+                                
+                                </div>
+ 
+ 
+ 
+ 
+                                <isinclude template="components/includedpage.isml">
+
+
+
+
+                                    <table >
+                                    <th><tr>Table Loaded With data sourced from Template.js and handled with pdict.viewData:</tr></th> 
+                                        <tr>
+                                            <th>Num</th>
+                                            
+                                            <th>ID</th>
+                                            
+                                            <th>Primero?</th>
+                                            
+                                             <th>Ultimo?</th>
+                                            
+                                            <th>Nombre</th>
+                                            
+                                        </tr>
+                                          <isloop iterator="${pdict.viewData}" var="dato" status="status"><tr>
+                                               <td> <isprint value="${status.count}" /> </td>
+                                                <td>  <isprint  value="${status.index}" /> </td>
+                                               <td>   <isprint value="${status.first}" />   </td>
+                                               <td>   <isprint value="${status.last}" />  </td>
+                                                <iscomment> 
+                                                    <isprint value="${status.even}" /> 
+                                                    <isprint value="${status.odd}" /> 
+                                                </iscomment>
+                                                   
+                                              <td>        <isprint value="${dato.nombre}" /> </td>
+                                               <isif condition="${status.index >= 3}">
+                                                        <isbreak/>
+                                                    </isif></tr>
+                                            </isloop>
+                                        </table>                           
+
+
+
+
+
+    </isdecorate>
