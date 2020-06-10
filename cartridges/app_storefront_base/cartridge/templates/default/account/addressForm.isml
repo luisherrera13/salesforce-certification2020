@@ -150,17 +150,6 @@
             autocomplete="tel">
         <div class="invalid-feedback"></div>
     </div>
-<!-- phoneBusiness Number -->
-    <div class="form-group
-        ${pdict.addressForm.phoneBusiness.mandatory === true ? 'required' : ''}">
-        <label class="form-control-label" for="phoneBusiness">
-            <isprint value="${pdict.addressForm.phoneBusiness.label}" encoding="htmlcontent" />
-        </label>
-        <input type="text" class="form-control" id="phoneBusiness"
-            <isprint value="${pdict.addressForm.phoneBusiness.attributes}" encoding="off" />
-            autocomplete="tel">
-        <div class="invalid-feedback"></div>
-    </div>
 
     <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
 

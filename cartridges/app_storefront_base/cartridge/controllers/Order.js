@@ -321,7 +321,6 @@ server.post(
             firstName: order.billingAddress.firstName,
             lastName: order.billingAddress.lastName,
             phone: order.billingAddress.phone,
-            phoneBusiness: order.billingAddress.phoneBusiness,
             email: order.customerEmail,
             password: newPassword
         };
@@ -371,7 +370,6 @@ server.post(
                             newCustomerProfile.firstName = registrationData.firstName;
                             newCustomerProfile.lastName = registrationData.lastName;
                             newCustomerProfile.phoneHome = registrationData.phone;
-                            newCustomerProfile.phoneBusiness = registrationData.phoneBusiness;
                             newCustomerProfile.email = login;
 
                             order.setCustomer(newCustomer);

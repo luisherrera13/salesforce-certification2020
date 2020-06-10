@@ -39,12 +39,6 @@
            missing-error="address.phone.missing"
            range-error="error.message.between10and20"
            parse-error="error.message.parse.phone"/>
-       <!-- phoneBusiness is mandatory for addresses -->
-    <field formid="phoneBusiness" label="label.input.phoneBusiness" description="address.phoneBusiness.example" type="string" mandatory="true"
-           binding="phoneBusiness" min-length="10" max-length="20"
-           missing-error="address.phoneBusiness.missing"
-           range-error="error.message.between10and20"
-           parse-error="error.message.parse.phoneBusiness"/>
 
     <!-- actions provided by the edit shipping address dialog -->
     <action formid="apply" valid-form="true"/>

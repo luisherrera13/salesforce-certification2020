@@ -240,7 +240,6 @@ server.post(
             firstName: registrationForm.customer.firstname.value,
             lastName: registrationForm.customer.lastname.value,
             phone: registrationForm.customer.phone.value,
-            phoneBusiness: registrationForm.customer.phoneBusiness.value,//check this
             email: registrationForm.customer.email.value,
             emailConfirm: registrationForm.customer.emailconfirm.value,
             password: registrationForm.login.password.value,
@@ -289,7 +288,6 @@ server.post(
                                 newCustomerProfile.firstName = registrationForm.firstName;
                                 newCustomerProfile.lastName = registrationForm.lastName;
                                 newCustomerProfile.phoneHome = registrationForm.phone;
-                                newCustomerProfile.phoneBusiness = registrationForm.phoneBusiness;
                                 newCustomerProfile.email = registrationForm.email;
                             }
                         });
@@ -363,7 +361,7 @@ server.get(
         profileForm.customer.firstname.value = accountModel.profile.firstName;
         profileForm.customer.lastname.value = accountModel.profile.lastName;
         profileForm.customer.phone.value = accountModel.profile.phone;
-        profileForm.customer.phoneBusiness = accountModel.profile.phoneBusiness;
+        profileForm.customer.phoneBusiness.value = accountModel.profile.phoneBusiness;//my extended attribute on system object
         profileForm.customer.email.value = accountModel.profile.email;
         res.render('account/profile', {
             profileForm: profileForm,
@@ -411,7 +409,6 @@ server.post(
             firstName: profileForm.customer.firstname.value,
             lastName: profileForm.customer.lastname.value,
             phone: profileForm.customer.phone.value,
-            phoneBusiness: profileForm.customer.phoneBusiness.value,
             email: profileForm.customer.email.value,
             confirmEmail: profileForm.customer.emailconfirm.value,
             password: profileForm.login.password.value,
@@ -456,7 +453,6 @@ server.post(
                         profile.setLastName(formInfo.lastName);
                         profile.setEmail(formInfo.email);
                         profile.setPhoneHome(formInfo.phone);
-                        profile.setphoneBusiness(formInfo.phoneBusiness);
                     });
 
                     // Send account edited email

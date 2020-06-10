@@ -9,8 +9,5 @@
 
     <field formid="phone" label="profile.phone" description="address.phone.example" type="string" mandatory="true"
            binding="phone" min-length="10" max-length="20" missing-error="error.card.info.missing.phone" range-error="error.message.between10and20" />
-     
-    <field formid="phoneBusiness" label="profile.phoneBusiness" description="address.phoneBusiness.example" type="string" mandatory="true"
-           binding="phoneBusiness" min-length="10" max-length="20" missing-error="error.card.info.missing.phoneBusiness" range-error="error.message.between10and20" />
 
 </form>

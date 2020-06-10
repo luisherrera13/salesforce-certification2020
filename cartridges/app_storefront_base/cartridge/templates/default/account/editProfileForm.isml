@@ -29,15 +29,19 @@
             <isprint value="${pdict.profileForm.customer.phone.attributes}" encoding="off" />>
         <div class="invalid-feedback"></div>
     </div>
-<div class="form-group
-        <isif condition="${pdict.profileForm.profile.phoneBusiness.mandatory === true}">required</isif>">
+    <div class="form-group
+        <isif condition="${pdict.profileForm.customer.phoneBusiness.mandatory === true}">required</isif>">
         <label class="form-control-label" for="phoneBusiness">
-            <isprint value="${pdict.profileForm.profile.phoneBusiness.label}" encoding="htmlcontent" />
+            <isprint value="${pdict.profileForm.customer.phoneBusiness.label}" encoding="htmlcontent" />
         </label>
         <input type="text" class="form-control" id="phoneBusiness"
-            <isprint value="${pdict.profileForm.profile.phoneBusiness.attributes}" encoding="off" />>
+            <isprint value="${pdict.profileForm.customer.phoneBusiness.attributes}" encoding="off" />>
         <div class="invalid-feedback"></div>
     </div>
+
+
+
+
     <div class="form-group
         <isif condition="${pdict.profileForm.customer.email.mandatory === true}">required</isif>">
         <label class="form-control-label" for="email">

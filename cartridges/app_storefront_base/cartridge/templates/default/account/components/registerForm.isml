@@ -52,23 +52,6 @@
             placeholder="${Resource.msg('example.phone','forms',null)}">
         <div class="invalid-feedback" id="form-phone-error"></div>
     </div>
-    <div class="form-group
-        <isif condition="${!!pdict.profileForm.customer.phoneBusiness.mandatory === true}">required</isif>">
-        <label class="form-control-label" for="registration-form-phoneBusiness">
-            <isprint value="${pdict.profileForm.customer.phoneBusiness.label}" encoding="htmlcontent" />
-        </label>
-        <input
-            type="tel"
-            class="form-control"
-            id="registration-form-phoneBusiness"
-            data-missing-error="${Resource.msg('error.message.required','forms',null)}"
-            data-pattern-mismatch="${Resource.msg('error.message.parse.phoneBusiness.profile.form','forms',null)}"
-            data-range-error="${Resource.msg('error.message.50orless','forms',null)}"
-            aria-describedby="form-phoneBusiness-error"
-            <isprint value=${pdict.profileForm.customer.phoneBusiness.attributes} encoding="off" />
-            placeholder="${Resource.msg('example.phoneBusiness','forms',null)}">
-        <div class="invalid-feedback" id="form-phoneBusiness-error"></div>
-    </div>
 
     <div class="form-group
         <isif condition="${!!pdict.profileForm.customer.email.mandatory === true}">required</isif>">

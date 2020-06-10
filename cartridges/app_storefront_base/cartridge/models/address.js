@@ -3,7 +3,6 @@
 /**
  * creates a plain object that contains address information
  * @param {dw.order.OrderAddress} addressObject - User's address
- * @param {dw.customer.Profile} addressObject2 - User's address
  * @returns {Object} an object that contains information about the users address
  */
 function createAddressObject(addressObject) {
@@ -20,7 +19,6 @@ function createAddressObject(addressObject) {
             addressId: Object.hasOwnProperty.call(addressObject, 'ID')
                 ? addressObject.ID : null,
             phone: addressObject.phone,
-            phoneBusiness: addressObject.phoneBusiness,
             postalCode: addressObject.postalCode,
             stateCode: addressObject.stateCode,
             jobTitle: addressObject.jobTitle,

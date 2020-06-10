@@ -120,7 +120,6 @@ function getAddressObject(address) {
             lastName: address.lastName,
             ID: address.ID,
             phone: address.phone,
-            phoneBusiness: address.phoneBusiness,
             postalCode: address.postalCode,
             stateCode: address.stateCode,
             postBox: address.postBox,
@@ -193,7 +192,7 @@ function getCustomerObject(customer) {
             firstName: customer.profile.firstName,
             email: customer.profile.email,
             phone: customer.profile.phoneHome,
-            phoneBusiness: customer.profile.phoneBusiness,//error
+            phoneBusiness: customer.profile.phoneBusiness,//my extended attribute value from system object
             customerNo: customer.profile.customerNo
         },
         addressBook: {

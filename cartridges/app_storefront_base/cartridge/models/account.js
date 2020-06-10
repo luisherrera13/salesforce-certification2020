@@ -3,7 +3,6 @@
 var AddressModel = require('*/cartridge/models/address');
 var URLUtils = require('dw/web/URLUtils');
 
-
 /**
  * Creates a plain object that contains profile information
  * @param {Object} profile - current customer's profile
@@ -118,7 +117,6 @@ function getCustomerPaymentInstruments(userPaymentInstruments) {
  */
 function account(currentCustomer, addressModel, orderModel) {
     this.profile = getProfile(currentCustomer.profile);
-   //no funciono esto this.profile = getProfile(currentCustomer.profile.test);
     this.addresses = getAddresses(currentCustomer.addressBook);
     this.preferredAddress = addressModel || getPreferredAddress(currentCustomer.addressBook);
     this.orderHistory = orderModel;

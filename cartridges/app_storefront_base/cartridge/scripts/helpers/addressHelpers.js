@@ -39,7 +39,6 @@ function updateAddressFields(newAddress, address) {
     newAddress.setFirstName(address.firstName || '');
     newAddress.setLastName(address.lastName || '');
     newAddress.setPhone(address.phone || '');
-    newAddress.setphoneBusiness(address.phoneBusiness || '');
     newAddress.setPostalCode(address.postalCode || '');
 
     if (address.states && address.states.stateCode) {
@@ -90,7 +89,6 @@ function copyShippingAddress(address) {
         firstName: address.firstName,
         lastName: address.lastName,
         phone: address.phone,
-        phoneBusiness: address.phoneBusiness,
         postalCode: address.postalCode,
         states: {
             stateCode: address.stateCode

@@ -40,13 +40,6 @@
                                     <a href="${URLUtils.url('Address-SetDefault', 'addressId', address.address.ID)}" class="normal" aria-label="${Resource.msg('label.addressbook.makedefaultaddress','account',null)}">${Resource.msg('link.addressbook.makedefault','account',null)}</a>
                                 </div>
                             </isif>
-                            <div>${address.address.city}, ${address.address.stateCode} ${address.address.postalCode}</div>
-                            <div>${address.address.phoneBusiness}</div>
-                            <isif condition="${address.address.ID !== pdict.addressBook[0].address.ID}">
-                                <div class="card-make-default-link">
-                                    <a href="${URLUtils.url('Address-SetDefault', 'addressId', address.address.ID)}" class="normal" aria-label="${Resource.msg('label.addressbook.makedefaultaddress','account',null)}">${Resource.msg('link.addressbook.makedefault','account',null)}</a>
-                                </div>
-                            </isif>
                             <button
                                 type="button"
                                 class="remove-btn remove-address btn-light"
