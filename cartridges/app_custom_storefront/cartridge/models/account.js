@@ -16,6 +16,7 @@ function getProfile(profile) {
             lastName: profile.lastName,
             email: profile.email,
             phone: profile.phone,
+            phoneBusiness: profile.phoneBusiness,
             password: '********'
         };
     } else {

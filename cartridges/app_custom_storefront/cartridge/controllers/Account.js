@@ -361,6 +361,7 @@ server.get(
         profileForm.customer.firstname.value = accountModel.profile.firstName;
         profileForm.customer.lastname.value = accountModel.profile.lastName;
         profileForm.customer.phone.value = accountModel.profile.phone;
+        profileForm.customer.phoneBusiness.value = accountModel.profile.phoneBusiness;//my extended attribute on system object
         profileForm.customer.email.value = accountModel.profile.email;
         res.render('account/profile', {
             profileForm: profileForm,

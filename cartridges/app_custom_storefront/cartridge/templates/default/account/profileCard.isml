@@ -23,6 +23,10 @@
                 <dt>${Resource.msg('label.profile.phone','account',null)}</dt>
                 <dd>${pdict.account.profile.phone}</dd>
             </dl>
+            <dl>
+                <dt>${Resource.msg('label.profile.phoneBusiness','account',null)}</dt>
+                <dd>${pdict.account.profile.phoneBusiness}</dd>
+            </dl>
         </isif>
 
     </div>
