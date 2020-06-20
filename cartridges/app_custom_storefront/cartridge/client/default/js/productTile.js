@@ -3,8 +3,9 @@
 var processInclude = require('base/util');
 
 $(document).ready(function () {
-    console.log('Hi how are you');
+    
     processInclude(require('base/product/quickView'));
+    console.log('Hi how are you');
     //alert('hola que tal buenos dias');
 })
 

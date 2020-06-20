@@ -3,7 +3,7 @@
 var processInclude = require('base/util');
 
 $(document).ready(function () {
-  //  console.log('Hi how are you');
+    console.log('Hi how are you');
     processInclude(require('base/product/quickView'));
-    alert('Script tesTile.js ejecutado desde template ismlincludeelements.isml');
+   // alert('Script tesTile.js ejecutado desde template ismlincludeelements.isml');
 })

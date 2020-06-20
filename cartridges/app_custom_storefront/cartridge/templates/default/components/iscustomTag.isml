@@ -1,0 +1,13 @@
+
+ <!--- tag implementation --->
+<isif condition="${pdict.valuex != null}">
+<h2> <isprint value="${pdict.valuex}" /><h2>
+
+<iselse>
+<h2> No hay valor en valuex de iscustomtag<h2>
+</isif>
+<br>
+<isset name="setvalue" value="${pdict.valuex}" scope="page">
+<isset name="setvalue" value="${setvalue +' and this text was added from an isset'}" scope="page">
+
+<isprint value="${setvalue}" />

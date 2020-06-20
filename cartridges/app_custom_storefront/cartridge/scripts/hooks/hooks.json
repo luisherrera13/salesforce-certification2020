@@ -3,6 +3,12 @@
        {
             "name" : "dw.ocapi.shop.category.modifyGETResponse",
             "script" : "./categories"
+        },
+        {
+            "name" : "dw.ocapi.shop.site.modifyGETResponse",
+            "script" : "./thisSite"
         }
-    ]
+          
+       ]
+    
 }

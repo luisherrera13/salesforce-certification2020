@@ -1,0 +1,29 @@
+<iscomment>
+		    This is a the layout page which is wraped on the <isreplace/> tag 
+            and <isdecorate> tag on exerciseIsml.isml template
+            <iscontent/> Define the MIME type of the output document
+	   </iscomment>
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+<!DOCTYPE html>
+<html >
+    <head>
+        
+        <isinclude template="/common/htmlHead" />
+        
+        <isactivedatahead/>
+        <iscomment>
+		    The <isactivedatahead> allows other pages to collect data from pages with a <head> tag in this 
+            case allows to collect data from this page which belongs to /common/htmlHead.isml loyout 
+	   </iscomment>
+        
+    </head>
+    <body>
+       
+                <isreplace/>
+          
+      
+    </body>
+</html>

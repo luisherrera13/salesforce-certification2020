@@ -1,0 +1,31 @@
+
+<iscomment>
+		    this is a template creeated to be irenderized by ExerciseIsml.isml controller
+</iscomment>
+
+<isdecorate template="common/layout/page1">
+                                
+                <isinclude template="components/header/exerciseHeader">
+
+                <div class="moduletag">
+                        <!--- new custom isml tag declaration --->
+                        <ismodule template = "components/iscustomTag.isml"
+                        name = "customtag"
+                        attribute = "valuex"
+                        >
+                        <!--- tag usage --->
+                        <iscustomtag valuex = "This text comes from attribute of iscustom tag rendered from iscustomTag.isml code"> 
+                        <br><br>
+                        <!--- calls a controller --->  
+                            <iscomponent pipeline ="Hellopeople-Show" /> 
+                </div>
+             
+             
+             
+                <isinclude template="components/footer/exerciseFooter">
+                                
+
+
+
+                                
+</isdecorate>
