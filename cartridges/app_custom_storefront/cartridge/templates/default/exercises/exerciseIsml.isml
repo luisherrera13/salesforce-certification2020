@@ -17,15 +17,17 @@
                         <iscustomtag valuex = "This text comes from attribute of iscustom tag rendered from iscustomTag.isml code"> 
                         <br><br>
                         <!--- calls a controller --->  
-                            <iscomponent pipeline ="Hellopeople-Show" /> 
+                            <iscomponent pipeline ="Jsonrequest-Show" />
+                             <br>
+                          
+                          
+                           <isinclude url="${URLUtils.url('Remotecontroller-Show','cid', 'Storefront')}"> 
+                         
+                            
                 </div>
-             
-             
-             
-                <isinclude template="components/footer/exerciseFooter">
-                                
+                 
+             <isinclude template="components/footer/exerciseFooter">
 
-
-
+            <iscomment> <isinclude url="${URLUtils.url('ExerciseFooter-Show','cid', 'Storefront')}"></iscomment>
                                 
 </isdecorate>
