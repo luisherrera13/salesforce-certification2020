@@ -1,0 +1,29 @@
+<!--- TEMPLATENAME: helloform.isml --->
+ <!--- <isscript>
+var assets = require('*/cartridge/scripts/assets.js');
+assets.addCss('/css/helloform.css'); 
+assets.addJs('/js/helloform.js'); </isscript>--->
+
+<isdecorate template="common/layout/page1">
+ <isinclude template="components/header/exerciseHeader">
+<div class="moduletag slant-down login-banner">
+	<h2>SFRA Form</h2>
+</div>
+
+<div class="moduletag card">
+	<form action="${pdict.actionUrl}" class="login" method="POST"
+		name="SFRAHelloForm">
+
+		<div class="form-group required">
+			<label> Nickname: </label> <input type="input" id="nickname"
+				class="form-control" name="nickname">
+				<label> Email: </label> <input type="input" id="email"
+				class="form-control" name="emailx">
+		</div>
+
+		<button type="submit" class="btn btn-block btn-primary">Submit</button>
+		<button type="submit" class="btn btn-block btn-primary">Cancel</button>
+	</form>
+</div>
+<isinclude template="components/footer/exerciseFooter">
+</isdecorate>

@@ -7,6 +7,8 @@
                                 
                 <isinclude template="components/header/exerciseHeader">
 
+                <isreplace>
+
                 <div class="moduletag">
                         <!--- new custom isml tag declaration --->
                         <ismodule template = "components/iscustomTag.isml"

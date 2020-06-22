@@ -1,0 +1,12 @@
+<!--- TEMPLATENAME: SFRAResultTemplate.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<!doctype html>
+<head></head>
+<isdecorate template="common/layout/page1">
+ <isinclude template="components/header/exerciseHeader">
+ <div class="moduletag card">
+<h1>Form Result</h1>
+<p>Nice to meet you, ${pdict.nickname} with email ${pdict.emailz}.</p>
+</div>
+<isinclude template="components/footer/exerciseFooter">
+</isdecorate>
