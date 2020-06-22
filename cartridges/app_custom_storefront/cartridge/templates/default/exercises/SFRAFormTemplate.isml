@@ -21,7 +21,10 @@ assets.addJs('/js/helloform.js'); </isscript>--->
 				class="form-control" name="emailx">
 		</div>
 
-		<button type="submit" class="btn btn-block btn-primary">Submit</button>
+		<button type="submit" class="btn btn-block btn-primary">Submit</button></br>
+	</form>
+	
+	<form action="${pdict.actionUrl2}" class="login" method="GET"
 		<button type="submit" class="btn btn-block btn-primary">Cancel</button>
 	</form>
 </div>

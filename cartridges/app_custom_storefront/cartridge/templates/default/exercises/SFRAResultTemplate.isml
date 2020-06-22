@@ -8,5 +8,11 @@
 <h1>Form Result</h1>
 <p>Nice to meet you, ${pdict.nickname} with email ${pdict.emailz}.</p>
 </div>
+<div class="moduletag card">
+	<form action="${pdict.actionUrl2}" class="login" method="GET"
+		<button type="submit" class="btn btn-block btn-primary">Back</button>
+	</form>
+</div>
+
 <isinclude template="components/footer/exerciseFooter">
 </isdecorate>

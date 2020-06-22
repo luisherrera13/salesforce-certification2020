@@ -12,10 +12,13 @@ server.post('Show', server.middleware.https, function(req, res, next) {
 
   var nickname = req.form.nickname;
   var emaily = req.form.emailx;
+  var actionUrl1 = URLUtils.url('SFRAForm-Start'); //sets the route to call for the form submit cancel or back action
+
 
   res.render('/exercises/SFRAResultTemplate', {
     nickname : nickname,
-    emailz : emaily
+    emailz : emaily,
+    actionUrl2: actionUrl1,
   
   });
    next();
