@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31"/>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <custom-type type-id="SFRAFormDef">
+        <display-name xml:lang="x-default">SFRA Form Def</display-name>
+        <description xml:lang="x-default">Custom object to store nickname and email</description>
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>site</storage-scope>
+        <key-definition attribute-id="emailx">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+            <attribute-definitions>
+            <attribute-definition attribute-id="nickname">
+                <display-name xml:lang="x-default">Nickname</display-name>
+                <description xml:lang="x-default">Enter the Nickname</description>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="sfraformhello">
+                <display-name xml:lang="x-default">SFRA-Hello</display-name>
+                <attribute attribute-id="emailx"/>
+                <attribute attribute-id="nickname"/>
+                <attribute attribute-id="creationDate" system="true"/>
+            </attribute-group>
+        </group-definitions>
+   </custom-type>
+</metadata>

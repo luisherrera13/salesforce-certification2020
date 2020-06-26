@@ -3751,6 +3751,12 @@
                 <mandatory-flag>false</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
             </attribute-definition>
+           <attribute-definition attribute-id="testx">
+                <display-name xml:lang="x-default">CustomSystemTestxAtributeJLH</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
         </custom-attribute-definitions>
         <group-definitions>
             <attribute-group group-id="Standard">
@@ -3772,6 +3778,7 @@
                 <display-name xml:lang="x-default">Phone Numbers</display-name>
                 <attribute attribute-id="phoneHome" system="true"/>
                 <attribute attribute-id="phoneBusiness" system="true"/>
+                <attribute attribute-id="testx" system="false"/>
                 <attribute attribute-id="phoneMobile" system="true"/>
                 <attribute attribute-id="fax" system="true"/>
             </attribute-group>

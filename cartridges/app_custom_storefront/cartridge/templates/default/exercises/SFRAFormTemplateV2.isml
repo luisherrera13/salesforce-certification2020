@@ -1,0 +1,38 @@
+<!--- TEMPLATENAME: helloform.isml --->
+
+
+<isdecorate template="common/layout/page1">
+<isscript>
+var assets = require('*/cartridge/scripts/assets.js');
+//assets.addCss('/css/helloform.css'); 
+//assets.addJs('/js/helloform.js');
+</isscript>
+ <isinclude template="components/header/exerciseHeader">
+<div class="moduletag slant-down login-banner">
+	<h2>SFRA Form</h2>
+</div>
+
+<div class="moduletag card">
+	<form action="${pdict.actionUrl}" class="login" method="POST"
+		 <isprint value="${pdict.SFRAFormForm.attributes}" encoding="off" />>
+
+		<div class="form-group required">
+			<!--<label> Nickname: </label> <input type="input" id="nickname"
+				class="form-control" name="nickname" <isprint value="${pdict.SFRAFormForm.nickname.attributes}" encoding="off" />>-->
+				<label> Nickname: </label> <input type="input" id="nickname"
+				class="form-control" <isprint value="${pdict.SFRAFormForm.nickname.attributes}" encoding="off" />>
+			<!--<label> Email: </label> <input type="input" id="emailx"
+				class="form-control" name="emailx" <isprint value="${pdict.SFRAFormForm.emailx.attributes}" encoding="off" />>-->
+				<label> Email: </label> <input type="input" id="emailx"
+				class="form-control" <isprint value="${pdict.SFRAFormForm.emailx.attributes}" encoding="off" />>
+		</div>
+		<input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
+		<button type="submit" class="btn btn-block btn-primary">Submit</button></br>
+	</form>
+	
+	<form action="${pdict.actionUrl2}" class="login" method="GET"
+		<button type="submit" class="btn btn-block btn-primary">Cancel</button>
+	</form>
+</div>
+<isinclude template="components/footer/exerciseFooter">
+</isdecorate>

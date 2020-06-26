@@ -1,0 +1,20 @@
+<!--- TEMPLATENAME: SFRAResultTemplate.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<!doctype html>
+<head></head>
+<isdecorate template="common/layout/page1">
+ <isinclude template="components/header/exerciseHeader">
+ <div class="moduletag card">
+<h1>Form Result</h1>
+<p>Nice to meet you, ${pdict.SFRAFormForm.nickname.value} with email ${pdict.SFRAFormForm.emailx.value}.</p>
+<p><br>
+
+</div>
+<div class="moduletag card">
+	<form action="${pdict.actionUrl2}" class="login" method="GET"
+		<button type="submit" class="btn btn-block btn-primary">Back</button>
+	</form>
+</div>
+
+<isinclude template="components/footer/exerciseFooter">
+</isdecorate>
