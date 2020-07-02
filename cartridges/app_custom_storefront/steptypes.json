@@ -1,0 +1,55 @@
+{
+  "step-types":
+  {
+    "script-module-step":
+    [
+      {
+        "@type-id":"custom.getCustomObjects",
+        "@supports-parallel-execution":"false",
+        "@supports-site-context":"true",
+        "@supports-organization-context":"true",
+        "description":"This script retrieves a custom object attributes for a given type and key attribute. It runs in site scope.",
+        "module":"app_custom_storefront/cartridge/scripts/steps/getCustomObjects.js",
+        "function":"getCOs",
+        "transactional":"true",
+        "timeout-in-seconds":"900",
+        "parameters":
+        {
+          "parameter":
+          [
+            {
+              "@name":"CustomObjectType",
+              "@type":"string",
+              "@required":"true",
+              "description":"The Custom Object type to be data retrieved."
+            },
+            {
+                "@name":"KeyAttributeValue",
+                "@type":"string",
+                "@required":"true",
+                "description":"The key attribute needed to successfull search for custom object"
+            }
+          ]
+        },
+        "status-codes": 
+        {
+          "status": 
+          [
+              {
+                  "@code": "ERROR",
+                  "description": "Used when the step failed with an error."
+              },
+              {
+                  "@code": "FINISHED",
+      			  "description": "Used when the step finished successfully."
+              },
+              {
+                  "@code": "FINISHED_WITH_WARNINGS",
+      			  "description": "Used when the step finished with warnings."
+              }
+          ]
+        }
+      }
+    ]
+  }
+}

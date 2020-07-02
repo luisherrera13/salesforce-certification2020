@@ -10,15 +10,16 @@ server.get('Show', function(req, res, next) {
     var CustomObject = CustomObjectMgr.getCustomObject('SFRAFormDef','jcolorado@gmail.com');
     //var viewData = res.getViewData(CustomObject);
     //res.setViewData(viewData);
-
-  
+ 
     res.json({ 
         
         Nickname: CustomObject.custom.nickname,
                  
         Email: CustomObject.custom.emailx,
 
-        user: CustomObject
+        user: CustomObject.custom
+        
+        //ObjectTypeDefinition = require('dw/object/ObjectTypeDefinition');
 
 
                 });
