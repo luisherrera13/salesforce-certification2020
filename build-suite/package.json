@@ -36,7 +36,7 @@
     "grunt-xmlpoke": "0.10.1",
     "imagesloaded": "4.1.4",
     "load-grunt-config": "3.0.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "moment": "2.24.0",
     "node-sass": "4.13.1",
     "promise": "8.1.0",
